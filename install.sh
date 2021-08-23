@@ -26,4 +26,4 @@ curl -s https://raw.githubusercontent.com/jaltuna/refind-theme-nord/main/setup.s
 sudo bash setup.sh
 
 # Removing refind-theme-nord cloned
-rm -rf setup.sh refind-theme-nord 2>/dev/null
+sudo rm -rf setup.sh refind-theme-nord 2>/dev/null

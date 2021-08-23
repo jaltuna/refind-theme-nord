@@ -25,6 +25,9 @@
 # The root of the exec directory
 THEME_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
 
+# Reset file descriptor stdin
+exec 0</dev/tty
+
 main() {
   if ! [[  $UID -eq 0 ]]; then 
     echo "Permission denied (you must be root)" >&2
